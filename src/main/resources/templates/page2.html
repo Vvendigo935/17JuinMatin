@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pas de titre comme pour Arsenal</title>
+    <span th:replace="~{home :: cssImports}"></span>
+</head>
+<body>
+
+<nav>
+    <a th:href="@{/}">HOME</a>
+</nav>
+
+<main>
+    <img th:src="@{/images/maxresdefault.jpg}" alt="un joli SARKO">
+    <p>The ORIGINS !! :</p>
+    <style>
+        video {
+            width: 600px;
+            border: 3px solid #333;
+            border-radius: 8px;
+        }
+    </style>
+    <video controls>
+        <source src="https://www.youtube.com/watch?v=Tq5oInDSb-M" type="video/mp4" th:autoplay />
+
+    </video>
+</main>
+
+<footer>
+
+    <p>Bonjour, je suis Nicolas Sarkozy, et j'ai le grand plaisir de lire :</p>
+    <p>Le temps des tempêtes</p>
+    <p>pour Audible</p>
+
+</footer>
+</body>
+</html>

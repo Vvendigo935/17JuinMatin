@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>LA BASE</title>
+    <th:block th:fragment="cssImports">
+        <link rel="stylesheet" type="text/css" th:href="@{css/style.css}">
+    </th:block>
+</head>
+<body>
+<h1>Home Page</h1>
+<h2> <span th:text="${name}"></span> </h2>
+
+<nav>
+    <a th:href="@{/page2}">Page 2</a>
+</nav>
+<img th:src="@{/images/maxresdefault.jpg}" alt="un joli SARKO">
+
+
+
+<th:block th:fragment="footer">
+    <footer>
+
+        <p>Bonjour, vous voulez que j'vous dise c'que veulent les Français ?....</p>
+        <p>Ben j'vais vous l'dire...</p>
+        <p>Laissez moi vous montrer, cliquer sur la page suivante hein, travailler + pour gagner + comme on dit</p>
+
+    </footer>
+</th:block>
+</body>
+</html>

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0b4671, #c4faf2, #6649e8, #200067);
+    background-size: 200% 200%;
+    animation: degradeAnimation 10s linear infinite;
+}
+
+img {
+    block-size: 400px;
+    animation: zoom 10s linear infinite;
+}
+
+video{
+
+}
+
+@keyframes degradeAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes zoom {
+   0% {
+        scale: 100%
+    }
+    50% {
+        scale: 50%
+    }
+    100%{
+        scale:100%
+    }
+
+}
+
+footer{
+    rotation: 10deg;
+}
+
